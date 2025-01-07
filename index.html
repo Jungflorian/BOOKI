@@ -21,8 +21,8 @@
             <img src="./images/logo/Booki.png"alt="Logo booki">
             </div>
             <div class="bouton_header">
-                <a class="bouton_hebergements" href="#">Hébergements</a>
-                <a class="bouton_Activités" href="#">Activités</a>
+                <a class="bouton_hebergements" href="#ancrage_hebergements">Hébergements</a>
+                <a class="bouton_Activités" href="#ancrage_activités">Activités</a>
             </nav>
         </header>
         <h3>Trouvez votre hébergement pour des vacances de réves</h3>
@@ -72,6 +72,7 @@
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
+                        <div id="ancrage_hebergements"></div>
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
@@ -193,7 +194,9 @@
                         </a>
                     </div>
                     <div class="afficher-txt">
-                        <h2 class="afficher-plus">Afficher plus</h2>
+                        <a href="#">
+                            <h3 class="afficher-plus">Afficher plus</h2>
+                        </a>    
                     </div>
                 </section>
                 <section class="populaires">
@@ -262,9 +265,47 @@
                     </div>
                 </section>
             </div>
+            <section class="Activités_marseille">
+                <h2>Activités à Marseille</h2>
+                <div class="acti">
+                <article class="card-content2">
+                    <h4 class="card-txt2">Vieux-port</h4>
+                    <img src="./images/activites/reno-laithienne.jpg">
+                </article>
+                <article class="card-content2">
+                    <h4 class="card-txt2">Fort de Pomègues</h4>
+                    <img src="./images/activites/paul-hermann.jpg">
+                </article>
+                <article class="card-content2">
+                    <h4 class="card-txt2">Parc national des Calanques</h4>
+                    <img src="./images/activites/kilyan-sockalingum.jpg">
+                </article>
+                <article class="card-content2">
+                    <h4 class="card-txt2">Notre-Dame-de-la-Garde</h4>
+                    <img src="./images/activites/florian-wehde.jpg">
+                </article>
+            </div>
         </main>
-        <footer></footer>
+        <footer>
+            <section class="Footer">
+                <div class="a_propos">
+                    <h4>A propos</h4>
+                    <p>Fonctionnement du site</p>
+                    <p>Conditions générales</p>
+                    <p>Données et confidentialité</p>
+                </div>
+                <div class="Nos_hebergements">
+                    <h4>Nos hébergements</h4>
+                    <p>Charte qualité</p>
+                    <p>Proposez votre Hôtel</p>
+                </div>
+                <div class="Assistance">
+                    <h4>Assistance</h4>
+                    <p>Centre d'aide</p>
+                    <p>Nous contacter</p>
+                </div>
+            </section>
+        </footer>
     </div>
 </body>
-
 </html>
