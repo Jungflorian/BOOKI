@@ -27,6 +27,7 @@ body {
     width: 100%;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 a {
@@ -344,27 +345,38 @@ header img{
     background-color: #F2F2F2;
     display: flex;
 } 
+.a_propos ,.Nos_hebergements ,.Assistance{
+    width: 33%;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+
     .hebergements-and-populaires {
         flex-direction: column;
-    }
 
-    .hebergements {
-        width: 100%;
+    }
+    .acti{
+       width: 100%;
+    }
+    
+    .card-content2 {
+        width: 50%;
     }
 
     .populaires {
         width: 100%;
         margin-top: 50px;
+        display: flex;
+        flex-direction: column;
     }
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -376,12 +388,20 @@ header img{
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .populaires-cards, .card-subtitle {
         font-size: 13px;
     }
+    .Activités_marseille{
+        width: 100%;
+    }
+    .img {
+        max-width: 100%;
+        height: auto;
+    }
+    
 }
-
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+
+@media screen and (max-width: 768px) {
+
 }
