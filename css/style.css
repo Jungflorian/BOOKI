@@ -49,9 +49,14 @@ a {
 .card img {
     object-fit: cover;
 }
-
+.card-subtitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .card-title {
     font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .card-content2 {
     display: flex;
@@ -79,40 +84,38 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    width: 1340px;
-    height: 614px;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 /****** Hebergements ***********/
 .hebergements {
     width: 890px;
-    height: 674px;
+    height: 614px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .hebergements_class{
     display: flex;
 }
 .hebergements-cards img, .hebergements-cards2 img{
     height: 124px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     width: 250px;
 }
 .hebergements-cards, .hebergements-cards2 {
     display: flex;
     justify-content: space-between;
-
-}
-.hebergements-title{
-    padding-bottom: 25px;
-}
-.hebergements-cards{
-    padding-bottom: 35px;
+    width: 811px;
+    height: 207px;
 }
 
 /****** Populaires ***********/
@@ -137,7 +140,6 @@ a {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-
 .populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
@@ -160,9 +162,6 @@ a {
     margin-bottom: 5px;
 }
 
-h3,p{
-    margin: 2px;
-}
 header{
     display:flex;
     justify-content: space-between;
@@ -233,6 +232,11 @@ header img{
 .search-button:hover {
     background-color: #0056b3;
   }
+
+.Filtres {
+    width: 54px;
+    height: 21px;
+}
 .Filtres4{
     width: 758px;
     height: 50px;
@@ -248,7 +252,6 @@ header img{
     width: 173px;
     height: 50px;
     border: solid 2px #d9d9d9;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,10 +262,9 @@ header img{
     background-color: #DEEBFF;
   }
 .Familial{
-    width: 173px;
+    width: 134px;
     height: 50px;
     border: solid 2px #d9d9d9;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,7 +278,6 @@ header img{
     width: 173px;
     height: 50px;
     border: solid 2px #d9d9d9;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,10 +288,9 @@ header img{
     background-color: #DEEBFF;
   }
 .Nos-pépites{
-    width: 173px;
+    width: 170px;
     height: 50px;
     border: solid 2px #d9d9d9;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,16 +343,7 @@ header img{
 .Footer {
     background-color: #F2F2F2;
     display: flex;
-}
-.a_propos, .Assistance , .Nos_hebergements {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 463px;
-    height: 163px;
-    padding: 20px;
-}
-
+} 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
