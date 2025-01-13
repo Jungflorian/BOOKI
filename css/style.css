@@ -197,10 +197,9 @@ header img{
     align-items: center;
     border: 1px solid #e0e0e0;
     border-radius: 15px;
-    overflow: hidden;
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    width: 28%;
+    width: 25%;
     height:49px;
     gap:24px;
     margin-top: 25px;
@@ -212,8 +211,9 @@ header img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50px;
-    height: 49px;
+    height: 29px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   
 .search-icon i {
@@ -223,12 +223,10 @@ header img{
 .search-input {
     flex: 1;
     border: none;
-    font-size: 18px;
     outline: none;
     color: #000000;
     height: 21px;
     font-weight:bold;
-    width: 147px;
   }
   
 .search-input::placeholder {
@@ -257,7 +255,7 @@ header img{
     height: 21px;
 }
 .Filtres4{
-    height: 50px;
+    height: auto;
     gap: 15px;
     display: flex;
     justify-items: start;
@@ -265,39 +263,22 @@ header img{
     padding-bottom: 35px;
     padding-top: 35px;
     font-weight: bold;
+    width: 100%;
   }
   .filtresall{
     display: flex;
     gap: 15px;
-    width: 60%;
+    width: 50%;
   }
-.Economique{
-    width: 25%;
-    height: 50px;
-    border: solid 2px #d9d9d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    gap: 10px ;
-  }
+
 .Economique:hover{
     background-color: #DEEBFF;
   }
-.Familial{
-    width: 25%;
-    height: 50px;
-    border: solid 2px #d9d9d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    gap: 10px ;
-  }
+
   .Familial:hover{
     background-color: #DEEBFF;
   }
-.Romantique{
+.Romantique,.Nos-pépites,.Familial,.Economique{
     width: 25%;
     height: 50px;
     border: solid 2px #d9d9d9;
@@ -310,16 +291,7 @@ header img{
 .Romantique:hover{
     background-color: #DEEBFF;
   }
-.Nos-pépites{
-    width: 25%;
-    height: 50px;
-    border: solid 2px #d9d9d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    gap: 10px ;
-  }
+
 .Nos-pépites:hover{
     background-color: #DEEBFF;
   }
@@ -405,7 +377,6 @@ h3{
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
     }
@@ -415,9 +386,7 @@ h3{
         justify-content: space-between;
     }
 
-    .populaires-cards a {
-        width: 30%;
-    }
+    
 
     .populaires-cards .card-title {
         font-size: 14px;
@@ -440,10 +409,26 @@ h3{
     .populaires-cards .card-rating{
         padding-left: 15px;
     }
-    .search-bar{
-        width: 54%;
+    .Filtres{width: 100%;
     }
-}
+    .filtresall{
+        width: 60%;
+    }
+    .Filtres4{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .Info{
+        padding-top: 25px;
+    }
+    .search-bar{
+        width: 40%;
+    }
+    .pop1 {
+        width:33%;
+    }
+
 /* Small devices (phones, less than 425px) */
 
 @media screen and (max-width: 425px) {
@@ -462,6 +447,7 @@ header{
     justify-content: center;
     width: 100%;
     gap: 30px;
+    padding-bottom: 20px;
 }
 .bouton_Activites:hover {
     color: #0065FC;
@@ -489,6 +475,55 @@ header{
     justify-content: center;
     width: 15%;
 }
+.filtresall{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+}
+.Economique,.Familial,.Romantique,.Nos-pépites{
+    width: 46%;
+}
+.Nos-pépites{
+    width: 36%;
+}
 .Filtres4{
+    margin-bottom: 75px;
+}
+.bouton_Activités,.bouton_hebergements{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hebergements-and-populaires{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.populaires-cards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.liste-hebergement{
+    width: 100%;
+}
+.hebergements{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.acti{
+    flex-direction: column;
+}
+.Footer{
+    flex-direction: column;
+}
+.card-content2{
+    width: 100%;
+}
+.Activités_marseille img{
+    height:238px;
+}
 }
 }
