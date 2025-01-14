@@ -30,6 +30,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 a {
@@ -61,18 +64,7 @@ a {
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.card-content2 {
-    width: 25%;
-    display: flex;
-    flex-direction: column-reverse;
-    box-shadow: 0px 3px 15px 0px #0000001A;
-    border-radius: 20px;
-}
-.card-content2 img{
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
+
 .card-txt {
     padding-left: 15px;
     padding-right: 15px;
@@ -136,7 +128,7 @@ a {
     height: 26px;
 }    
 .liste-hebergement{
-    width: 27%;
+    width: 30%;
 }
 /****** Populaires ***********/
 .populaires  {
@@ -256,7 +248,7 @@ header img{
 }
 .Filtres4{
     height: auto;
-    gap: 15px;
+    gap: 5px;
     display: flex;
     justify-items: start;
     align-items: center;
@@ -267,7 +259,7 @@ header img{
   }
   .filtresall{
     display: flex;
-    gap: 15px;
+    gap: 5px;
     width: 50%;
   }
 
@@ -279,7 +271,7 @@ header img{
     background-color: #DEEBFF;
   }
 .Romantique,.Nos-pépites,.Familial,.Economique{
-    width: 25%;
+    width: 20%;
     height: 50px;
     border: solid 2px #d9d9d9;
     display: flex;
@@ -323,18 +315,30 @@ header img{
     display: flex;
     align-items: flex-end;
 }
-.Activités_marseille {
-    list-style: none;
-    gap: 30px;
-    padding: 30px;
-}
-.Activités_marseille img {
-    width: 100%;
-    height: 100%;
-}
+
 .acti {
     display: flex;
+    border-radius: 20px;
+    width: 25%;
+}
+.Activités_marseille a{
+    width: 25%;
+    box-shadow: 0px 3px 15px #0000001A;
+    border-radius: 20px;
+}
+.liste-acti{
+    display: flex;
     gap: 30px;
+}
+.liste-acti img{
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h4{
+    padding-left: 20px;
 }
 .Footer {
     background-color: #F2F2F2;
@@ -357,6 +361,11 @@ h3{
     border: none;
     background-color: #0065FC;
 }
+.Activités_marseille{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -367,10 +376,7 @@ h3{
     .hebergements-and-populaires {
         flex-direction: column;
     }
-    .acti{
-       width: 100%;
-    }
-    
+
     .card-content2 {
         width: 50%;
     }
@@ -386,17 +392,12 @@ h3{
         justify-content: space-between;
     }
 
-    
-
     .populaires-cards .card-title {
         font-size: 14px;
     }
 
     .populaires-cards, .card-subtitle {
         font-size: 13px;
-    }
-    .Activités_marseille{
-        gap:30px
     }
 
     .img {
@@ -409,10 +410,11 @@ h3{
     .populaires-cards .card-rating{
         padding-left: 15px;
     }
-    .Filtres{width: 100%;
+    .Filtres{
+        width: 100%;
     }
     .filtresall{
-        width: 60%;
+        width: 100%;
     }
     .Filtres4{
         display: flex;
@@ -428,7 +430,9 @@ h3{
     .pop1 {
         width:33%;
     }
-
+    .card-content2{
+        width: 100%;
+    }
 /* Small devices (phones, less than 425px) */
 
 @media screen and (max-width: 425px) {
@@ -479,17 +483,12 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 60%;
+    width: 100%;
 }
 .Economique,.Familial,.Romantique,.Nos-pépites{
     width: 46%;
 }
-.Nos-pépites{
-    width: 36%;
-}
-.Filtres4{
-    margin-bottom: 75px;
-}
+
 .bouton_Activités,.bouton_hebergements{
     width: 100%;
     display: flex;
@@ -513,17 +512,15 @@ header{
     height: auto;
 }
 
-.acti{
-    flex-direction: column;
-}
 .Footer{
     flex-direction: column;
 }
 .card-content2{
     width: 100%;
 }
-.Activités_marseille img{
-    height:238px;
+
+.pop1 {
+    width: 100%;
 }
 }
 }
