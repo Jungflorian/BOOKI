@@ -337,7 +337,7 @@ header img{
     border-top-right-radius: 20px;
 }
 
-h4{
+.Activités_marseille h4{
     padding-left: 20px;
 }
 .Footer {
@@ -438,9 +438,10 @@ h3{
 @media screen and (max-width: 425px) {
 
 .logo_booki {
-    padding-right: 0%;
-    padding-left: 0%;
-    padding-bottom: 0%;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 header{
     display: flex;
@@ -453,15 +454,16 @@ header{
     gap: 30px;
     padding-bottom: 20px;
 }
-.bouton_Activites:hover {
-    color: #0065FC;
-    border-bottom: #0065FC 50% solid;
-}
 .bouton_hebergements:hover{
-    color: #0065FC;
     border-bottom: #0065FC 1px solid;
+    color: #0065FC;
+    border-top: none;
 }
-
+.bouton_Activités:hover{
+    border-bottom: #0065FC 1px solid;
+    color: #0065FC;
+    border-top: none;
+}
 .search-bar{
     width: auto;
 }
@@ -521,6 +523,38 @@ header{
 
 .pop1 {
     width: 100%;
+}
+.liste-acti{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+.acti{
+    width: 100%;
+}
+.liste-acti a  {
+    width: 100%;
+}
+.liste-acti article{
+    width: 100%;
+}
+body{
+    padding: 0;
+}
+.sous-header{
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Activités_marseille h2{
+    padding-left: 30px;
+}
+
+.Footer{
+    padding-left: 30px;
 }
 }
 }
