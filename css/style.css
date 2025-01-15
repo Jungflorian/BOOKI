@@ -81,11 +81,162 @@ a {
 .euro {
     font-weight: 700;
 }
-
+h3{
+    display: contents;
+}
 .neutral-star {
     color: var(--main-bg-color)
 }
+/****** Header - Sous-header ******/
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
 
+header img{
+    width: 61px;
+    height: 19px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    height:49px;
+    gap:24px;
+    margin-top: 25px;
+  }
+  
+.search-icon {
+    background-color: #f3f3f3;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 29px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+.search-icon i {
+    font-size: 18px;
+  }
+  
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    color: #000000;
+    height: 21px;
+    font-weight:bold;
+  }
+  
+.search-input::placeholder {
+    color: #000000;
+  }
+  
+.search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 49px;
+  }
+  
+.search-button:hover {
+    background-color: #0056b3;
+  }
+
+.Filtres {
+    width: 54px;
+    height: 21px;
+}
+.Filtres4{
+    height: auto;
+    gap: 5px;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    font-weight: bold;
+    width: 100%;
+  }
+  .filtresall{
+    display: flex;
+    gap: 5px;
+    width: 50%;
+  }
+
+  .Economique:hover{
+    background-color: #DEEBFF;
+  }
+
+  .Familial:hover{
+    background-color: #DEEBFF;
+  }
+.Romantique,.Nos-pépites,.Familial,.Economique{
+    width: 20%;
+    height: 50px;
+    border: solid 2px #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    gap: 10px ;
+  }
+.Romantique:hover{
+    background-color: #DEEBFF;
+  }
+
+.Nos-pépites:hover{
+    background-color: #DEEBFF;
+  }
+.Info{
+   height: 24px;
+   gap: 10px;
+   display: flex;
+   text-align: start;
+   justify-content: start;
+   padding-bottom: 25px;
+  }
+.logo_booki{
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.bouton_header{
+    display: flex;
+    gap:68px;
+    height: 35px;
+}
+
+.bouton_hebergements:hover, .bouton_Activités:hover{
+    color: #0065FC;
+    border-top: #0065FC 1px solid;
+}
+.bouton_Activités,.bouton_hebergements{
+    display: flex;
+    align-items: flex-end;
+}
+.logo_loupe{
+    display: none;
+}
+.bouton-loupe{
+    border: none;
+    background-color: #0065FC;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -173,148 +324,7 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-
-header{
-    display:flex;
-    justify-content: space-between;
-    align-items:flex-start;
-}
-header img{
-    width: 61px;
-    height: 19px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    border: 1px solid #e0e0e0;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    width: 25%;
-    height:49px;
-    gap:24px;
-    margin-top: 25px;
-  }
-  
-.search-icon {
-    background-color: #f3f3f3;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 29px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-  }
-  
-.search-icon i {
-    font-size: 18px;
-  }
-  
-.search-input {
-    flex: 1;
-    border: none;
-    outline: none;
-    color: #000000;
-    height: 21px;
-    font-weight:bold;
-  }
-  
-.search-input::placeholder {
-    color: #000000;
-  }
-  
-.search-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    height: 49px;
-  }
-  
-.search-button:hover {
-    background-color: #0056b3;
-  }
-
-.Filtres {
-    width: 54px;
-    height: 21px;
-}
-.Filtres4{
-    height: auto;
-    gap: 5px;
-    display: flex;
-    justify-items: start;
-    align-items: center;
-    padding-bottom: 35px;
-    padding-top: 35px;
-    font-weight: bold;
-    width: 100%;
-  }
-  .filtresall{
-    display: flex;
-    gap: 5px;
-    width: 50%;
-  }
-
-.Economique:hover{
-    background-color: #DEEBFF;
-  }
-
-  .Familial:hover{
-    background-color: #DEEBFF;
-  }
-.Romantique,.Nos-pépites,.Familial,.Economique{
-    width: 20%;
-    height: 50px;
-    border: solid 2px #d9d9d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    gap: 10px ;
-  }
-.Romantique:hover{
-    background-color: #DEEBFF;
-  }
-
-.Nos-pépites:hover{
-    background-color: #DEEBFF;
-  }
-.Info{
-   height: 24px;
-   gap: 10px;
-   display: flex;
-   text-align: start;
-   justify-content: start;
-   padding-bottom: 25px;
-  }
-.logo_booki{
-    padding-right: 50px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-.bouton_header{
-    display: flex;
-    gap:68px;
-    height: 35px;
-}
-
-.bouton_hebergements:hover, .bouton_Activités:hover{
-    color: #0065FC;
-    border-top: #0065FC 1px solid;
-}
-.bouton_Activités,.bouton_hebergements{
-    display: flex;
-    align-items: flex-end;
-}
+/******* Activités ******/
 
 .acti {
     display: flex;
@@ -340,6 +350,15 @@ header img{
 .Activités_marseille h4{
     padding-left: 20px;
 }
+
+.Activités_marseille{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/***** Footer *****/
+
 .Footer {
     background-color: #F2F2F2;
     display: flex;
@@ -350,21 +369,6 @@ header img{
 .afficher-txt {
     width: 100%;
     height: 21px;
-}
-h3{
-    display: contents;
-}
-.logo_loupe{
-    display: none;
-}
-.bouton-loupe{
-    border: none;
-    background-color: #0065FC;
-}
-.Activités_marseille{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
