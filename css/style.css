@@ -109,7 +109,6 @@ header img{
     width: 25%;
     height:49px;
     gap:24px;
-    margin-top: 25px;
   }
   
 .search-icon {
@@ -208,6 +207,7 @@ header img{
    display: flex;
    text-align: start;
    justify-content: start;
+   padding-bottom: 25px;
   }
 .logo_booki{
     padding-right: 50px;
@@ -488,7 +488,7 @@ header{
     background-color: #0065FC;
     border-radius: 20%;
     justify-content: center;
-    width: 15%;
+    width: 10%;
 }
 .filtresall{
     display: flex;
