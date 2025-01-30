@@ -30,7 +30,6 @@ body {
     width: 100%;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -308,6 +307,7 @@ header img{
     gap: 30px;
 }
 .card2 {
+    height: 220px;
     width: 100%;
     background-color: white;
     border-radius: 20px;
@@ -397,6 +397,8 @@ header img{
 .liste-acti{
     display: flex;
     gap: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .liste-acti img{
     width: 100%;
@@ -423,6 +425,7 @@ header img{
 } 
 .a_propos ,.Nos_hebergements ,.Assistance{
     width: 33%;
+    margin-left: 15px;
 }
 .afficher-txt {
     width: 100%;
@@ -540,11 +543,15 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
 }
-.Filtres1 {
+.Filtres1,.Filtres2{
     display: flex ;
+    width: 100%;
 }
-
+.Romantique,.Economique,.Familial,.Nos-pépites{
+    width: 50%;
+}
 .bouton_Activités,.bouton_hebergements{
     width: 100%;
     display: flex;
@@ -600,7 +607,7 @@ header{
     width: 100%;
 }
 body{
-    padding: 0;
+    padding: 15px;
 }
 .sous-header{
     gap: 35px;
